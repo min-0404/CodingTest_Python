@@ -12,6 +12,8 @@ def solution(participant, completion):
         
     return dict[sum];
 
+    
+
 # Counter 이용 (딕셔너리와 비슷한데, key 는 이름, value 는 값)
 # import collections
 # def solution(participant, completion):
