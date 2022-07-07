@@ -1,4 +1,7 @@
 # Hash 이용한 방법
+from matplotlib import collections
+
+
 def solution(participant, completion):
     
     dict = {}
