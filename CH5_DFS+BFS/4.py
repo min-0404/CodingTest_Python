@@ -1,10 +1,31 @@
-from collections import deque
+from collections import defaultdict
+from this import s
 
-n, m = map(int, input().split());
-graph = [list(map(int, input().split())) for _ in range(n)]
-visited = [[False] * m for _ in range(n)]
-dx = [-1, 1, 0, 0 ]
-dy = [0, 0 , 1, -1]
+def countLetters(word):
+    counter = {}
+    for letter in word:
+        if letter not in counter:
+            counter[letter] = 0;
+        counter[letter] += 1;
+    return counter
 
-def BFS(x,y):
-    x,y = q
+def countLetters2(word):
+    counter = {}
+    for letter in word:
+        counter.setdefault(letter, 0 );
+        counter[letter] += 1;
+    return counter;
+
+def countLetters(word):
+    counter = defaultdict(int);
+    for l in word:
+        counter[l] += 1;
+    return counter;
+
+def groupwords(words):
+    grouper = defaultdict(int);
+    for word in words:
+        length = len(word);
+        grouper[length].append(word);
+    
+    
