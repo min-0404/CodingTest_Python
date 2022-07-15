@@ -39,3 +39,10 @@ for i in num:
     sum += hash(i);
 print(dict)
 print(sum)
+
+dict2= {}
+sum2 = 0
+num2 = ['1', '2']
+for i in num2:
+    dict2[hash(i)] = i;
+    sum2 += hash(i);
