@@ -1,3 +1,4 @@
+# 참고: defaultdict 를 사용하는 방법 말고도 리스트 -> 세트 -> 다시 리스트로 변환하는 방법으로 중복제거하는 좋은 방법이 있다.
 from collections import defaultdict
 
 def solution(nums):
