@@ -1,6 +1,3 @@
-from re import S
-
-
 def solution(N, stages):
     
     dic = {} # 각 스테이지 별로 멈춰있는 유저 수 저장
@@ -25,7 +22,7 @@ def solution(N, stages):
         lst.append((fail, stage))
     
     # 튜플을 원소로 가진 리스트 정렬하기
-    lst.sort(key = lambda x:(-x[0], x[1])) # lambda 활용: 
+    lst.sort(key = lambda x:(-x[0], x[1])) # lambda 활용: 튜플의 첫번째 원소로 내림차순 + 튜플의 두번째 원소로 오름차순
     answer = []
     for i in lst:
         answer.append(i[1])
