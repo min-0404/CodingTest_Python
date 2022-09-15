@@ -15,13 +15,10 @@ def solution(begin, target, words):
     q.append((begin, 0))
     
     while q:
-        
         word, cnt = q.popleft()
-        
         # 종결 조건
         if word == target:
-            break
-            
+            return cnt
         for i in range(n): # words 배열을 순환하면서
             temp_cnt = 0
             for j in range(m): # 한 개의 word를 순환하면서
@@ -30,5 +27,3 @@ def solution(begin, target, words):
             if temp_cnt == 1 and visited[i] == False:
                 q.append((words[i], cnt+1))
                 visited[i] = True
-
-    return cnt
