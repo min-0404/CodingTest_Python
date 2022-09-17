@@ -46,3 +46,17 @@ num2 = ['1', '2']
 for i in num2:
     dict2[hash(i)] = i;
     sum2 += hash(i);
+
+# x = 10
+# x = str(x)
+# print(x)
+
+x = 'ab'
+y = int(x)
+print(y)
+
+# k = 'a'
+# a = ord(k)
+# b = int(k)
+# print(a)
+# print(b)
