@@ -9,7 +9,7 @@ def DFS(start):
         return
     
     # 수행동작
-    for i in range(start, n + 1):
+    for i in range(start, n + 1): # 중복 검사 안해도됨, but start는 써야함
         answer.append(i)
         DFS(i)
         answer.pop()

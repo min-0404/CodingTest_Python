@@ -12,11 +12,14 @@ minimum = 1e9
 
 def dfs(depth, total, plus, minus, multiply, divide):
     global maximum, minimum
+
+    # 종결조건
     if depth == N:
         maximum = max(total, maximum)
         minimum = min(total, minimum)
         return
 
+    # 실행동작
     if plus != 0:
         dfs(depth + 1, total + num[depth], plus - 1, minus, multiply, divide)
     if minus != 0:
