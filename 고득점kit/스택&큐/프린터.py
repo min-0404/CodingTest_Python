@@ -9,7 +9,6 @@ def solution(priorities, location):
     while q:
         
         x = q.popleft()
-        
         if x[0] < max(q)[0]:
             q.append(x)
         else:

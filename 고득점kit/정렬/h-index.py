@@ -2,8 +2,9 @@ def solution(citations):
     
     citations.sort(reverse=True)
     
+    # idx 가 value 보다 커질때 H-Inedx 라고 부른다.
     for idx, cit in enumerate(citations):
         if idx >= cit:
             return idx;
         
-    return len(citations) # 끝까지 답이 없다면 결국 전체 길이를 반환하게 됨
+    return len(citations)

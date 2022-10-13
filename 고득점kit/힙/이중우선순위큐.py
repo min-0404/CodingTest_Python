@@ -9,6 +9,7 @@ def solution(operations):
             number = i[2:]
             number = int(number)
             heapq.heappush(q, number)
+            
         # 삭제 연산
         else:
             # 최솟값 삭제 -> 최소힙(디폴트)에서 pop

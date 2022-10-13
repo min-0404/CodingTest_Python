@@ -36,3 +36,4 @@ def solution(n, wires):
         answer.append(abs(result[0] - result[1]))
 
     return min(answer)
+
