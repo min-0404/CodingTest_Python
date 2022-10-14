@@ -1,4 +1,4 @@
-# 좋은 수열: product 형태의 백트래킹
+# 좋은 수열: product 형태의 백트래킹 -> 중복제거, start 이런거 다 필요업음
 
 import sys
 n = int(input())
