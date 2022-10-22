@@ -7,6 +7,7 @@ visited = [[False] * m for _ in range(m)];
 
 dx = [-1, 1, 0, 0];
 dy = [0, 0 , 1, -1];
+
 def DFS(x,y):
     visited[x][y] = True;
     for i in range(4):

@@ -12,4 +12,5 @@ def solution(s):
     if len(stack) >= 1:
         return False
     return True
+
     

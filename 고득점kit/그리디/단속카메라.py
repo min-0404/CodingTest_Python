@@ -17,8 +17,3 @@ def solution(routes):
             answer += 1
     
     return answer
-
-    def DFS(x):
-        for i in range(x):
-            DFS(i)
-        for j in 

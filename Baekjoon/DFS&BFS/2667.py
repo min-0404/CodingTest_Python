@@ -1,4 +1,5 @@
-# 단지 번호 붙이기 : 단순한 DFS 또는 BFS문제, 덩어리 개수와, 그 덩어리 이루는 개수 둘다 알아내야함
+# 단지 번호 붙이기 : 단순한 DFS 또는 BFS문제 -> "덩어리 개수" + "각 덩어리의 원소 개수" 둘다 알아내야함
+# DFS 활용 버전
 from sys import stdin
 def DFS(x, y):
 
@@ -13,14 +14,15 @@ def DFS(x, y):
         nx = x + dx[i]
         ny = y + dy[i]
         
-        if 0 <= nx < n and 0 <= ny < n: 
-            if map[nx][ny] == 1:
-                if visited[nx][ny] == False:
+        if 0 <= nx < n and 0 <= ny < n:  # 첫번째 조건
+            if map[nx][ny] == 1: # 두번째 조건
+                if visited[nx][ny] == False: # 세번째 조건
                     DFS(nx, ny)
     
     
 n = int(input())
 map = [[0] * n for _ in range(n)]
+
 for i in range(n):
     line = stdin.readline().strip()
     for j, b in enumerate(line):
