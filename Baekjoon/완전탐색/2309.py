@@ -4,7 +4,7 @@ import sys
 def DFS(start):
 
     # 종결조건
-    if sum(result) == 100 and len(result) == 7:
+    if sum(result) == 100 and len(result) == 7: 
         result.sort()
         for i in result:
             print(i)
@@ -14,7 +14,7 @@ def DFS(start):
     for i in range(start, 9): # start부터 시작
          if lst[i] not in result: # 중복 제거
             result.append(lst[i])
-            DFS(i+1)
+            DFS(i+1) # DFS(i + 1) 인 것 항상 주의하자
             result.pop()
 
 
@@ -24,5 +24,7 @@ lst = []
 for _ in range(9):
     x = int(input())
     lst.append(x)
+
+# 결과처리
 result = []
 DFS(0)
