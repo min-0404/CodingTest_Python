@@ -13,7 +13,7 @@ def DFS(x,y):
     for i in range(4):
         nx = x + dx[i]; 
         ny = y + dy[i];
-        if 0 <= nx < n and 0 <= ny < m:
+        if 0 <= nx < n and 0 <= ny < m: 
             DFS(nx, ny);
             visited[nx][ny] = True;
 
@@ -21,7 +21,7 @@ for i in range(n):
     for j in range(m):
          if graph[i][j] == 1 and visited[i][j] == False:
             DFS(i, j);
-            
+             
 
 
 

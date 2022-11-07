@@ -7,10 +7,10 @@
 def countCandy():
 
     # result[0]은 가로 중 최대 연속 값, result[1]은 세로 최대 연속 값
-    result = []
+    result = [] 
 
     
-    # 가로 줄 확인
+    # 가로 줄 확인 
     cnt = []
     for i in range(n):
         tmp = 1

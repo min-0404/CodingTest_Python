@@ -19,7 +19,7 @@ def DFS(start):
 
 
 
-# 9명의 난쟁이 데이터 저장
+# 9명의 난쟁이 데이터 저장 
 lst = []
 for _ in range(9):
     x = int(input())

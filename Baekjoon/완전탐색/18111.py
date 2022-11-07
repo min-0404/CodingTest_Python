@@ -9,7 +9,7 @@ graph = []
 for _ in range(n):
     lst = list(map(int, input().split()))
     graph.append(lst)
-
+ 
 
 # 완전탐색
 answer = []
